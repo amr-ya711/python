@@ -6,5 +6,4 @@ for  i in range (total_things) :
     cost+=item_price
 Rest= total_money - cost
 print(f"The cost Of things are :  {cost:.2}" )  
-print(f"The Rest Of Money is :  {Rest:.2}" )  
-
+print(f"The Rest Of Money is :  {Rest:.3}" ) 
