@@ -3,6 +3,6 @@ Students = [
     {"Name" : "Yasser" , "Grades" :[ 80 , 85 , 90]} ,
     {"Name" : "Ahmed" , "Grades" :[ 85 , 90 , 95]}
 ]
-for Student in Students : 
-    Average = sum ( Student["Grades"]) / 3
+for Student in Students :    
+    Average = sum(Student["Grades"]) / len(Student["Grades"])
     print(f"{Student ['Name']}  : {Average : .2f}")
