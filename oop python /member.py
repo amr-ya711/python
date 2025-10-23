@@ -10,7 +10,6 @@ class Member:
         return self.__membership_id
     def set_membership_id(self, new_id):
         self.__membership_id = new_id
-
     def borrow_book(self, book):
         if book.available:
             book.available = False
@@ -18,7 +17,6 @@ class Member:
             print(f"{self.name} borrowed '{book.title}'.")
         else:
             print(f"Sorry, '{book.title}' is not available.")
-
     def return_book(self, book):
         if book in self.borrowed_books:
             book.available = True
